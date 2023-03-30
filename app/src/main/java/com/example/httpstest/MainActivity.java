@@ -396,7 +396,7 @@ public class MainActivity extends AppCompatActivity {
             CustomWebViewClient mWebViewClient = new CustomWebViewClient();
             mWebViewClient.setCheckflag("checkCerts");
             wv_show.setWebViewClient(mWebViewClient);
-            wv_show.loadUrl("https://www.qq.com/search.htm?query=WebView_with_SystemCAcheck");
+            wv_show.loadUrl("https://www.baidu.com/s?wd=WebView_with_SystemCAcheck");
         });
 
 
