@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">httpstest</string>
+    <string name="app_name">https测试</string>
+    <string name="http_connect">HTTP CONNECT(HTTP直连)</string>
+    <string name="https_connect_without_ca">HTTPS CONNECT(忽略证书校验)</string>
+    <string name="https_connect_with_system_ca">HTTPS CONNECT(系统证书校验)</string>
+    <string name="ssl_pinning_with_key">SSL PINNING(代码校验)</string>
+    <string name="ssl_pinning_with_ca">SSL PINNING(配置文件)</string>
+    <string name="https_bothway">HTTPS 双向校验</string>
+    <string name="webview_ssl_without_ca">WEBVIEW SSL(忽略证书校验)</string>
+    <string name="webview_ssl_with_system_ca">WEBVIEW SSL(系统证书校验)</string>
+    <string name="webview_ssl_pinning">WEBVIEW SSL(SSL PINNING)</string>
+    <string name="check_proxy">检测代理</string>
+    <string name="show">ACCESS RESULT</string>
 </resources>

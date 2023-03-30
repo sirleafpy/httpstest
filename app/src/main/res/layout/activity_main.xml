@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <requestFocus />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_http_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/http_connect" />
+
+            <Button
+                android:id="@+id/btn_https_connect_without_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/https_connect_without_ca" />
+
+            <Button
+                android:id="@+id/btn_https_connect_with_system_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/https_connect_with_system_ca" />
+
+            <Button
+                android:id="@+id/btn_ssl_pinning_with_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ssl_pinning_with_key" />
+
+            <Button
+                android:id="@+id/btn_ssl_pinning_with_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ssl_pinning_with_ca" />
+
+            <Button
+                android:id="@+id/btn_https_bothway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/https_bothway" />
+
+            <Button
+                android:id="@+id/btn_webview_ssl_without_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/webview_ssl_without_ca" />
+
+            <Button
+                android:id="@+id/btn_webview_ssl_with_system_ca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/webview_ssl_with_system_ca" />
+
+            <Button
+                android:id="@+id/btn_webview_ssl_pinning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/webview_ssl_pinning" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sc_check_proxy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_proxy" />
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:text="@string/show" />
+
+            <WebView
+                android:id="@+id/wv_show"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
