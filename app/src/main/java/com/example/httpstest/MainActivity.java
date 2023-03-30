@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
         btn_ssl_pinning_with_key.setOnClickListener(view -> new Thread(() -> {
             String btn_text = String.format("<%s>", ((Button) view).getText());
             String baidu_url = "https://www.baidu.com/s?wd=SSLPinningCode";
-            String bing_url = "https://cn.bing.com/search?q=SSLPinningCAfile";
+            String bing_url = "https://www.bing.com/search?q=SSLPinningCAfile";
 
             Message message = new Message();
             message.what = 1;
